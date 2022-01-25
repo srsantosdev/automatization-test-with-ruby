@@ -1,12 +1,13 @@
-Dado('que loguei') do
+Dado('que o usuario queira se logar') do
   visit ''
   sleep 5
 end
 
-Quando('eu logar') do
- 
+Quando('ele digitar as credenciais validas') do
+  @test = LoginPage.new
+  @test.userLogin
 end
 
-Entao('logaremos') do
+Entao('deve acessar o site com sucesso') do
   
 end

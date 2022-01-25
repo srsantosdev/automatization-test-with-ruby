@@ -1,8 +1,11 @@
 #language: pt
 
-Funcionalidade: Login com sucesso
+Funcionalidade: Sistema de login
+Para ter acesso ao sistema
+O usuario do LinkedIn
+Deseja logar no site
 
 Cenario: Login com sucesso
-Dado que loguei
-Quando eu logar
-Entao logaremos
+Dado que o usuario queira se logar
+Quando ele digitar as credenciais validas
+Entao deve acessar o site com sucesso
