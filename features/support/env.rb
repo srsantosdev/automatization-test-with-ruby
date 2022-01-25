@@ -6,6 +6,7 @@ require 'site_prism/all_there'
 require 'rspec'
 require 'rspec/expectations'
 require 'selenium-webdriver'
+include RSpec::Matchers
 
 Capybara.register_driver :site_prism do |app|
   Capybara::Selenium::Driver.new(app, browser:  :chrome)
